@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | EcoVate</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">EcoVate</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="features.html">Features</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <button id="darkModeToggle">🌙</button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero contact-hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>Contact Us</h1>
+      <p>Have questions or want to know more about FocusBeam? Send us a message!</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="contact-container">
+
+      <!-- CONTACT FORM -->
+      <div class="contact-form">
+        <h2>Get in Touch</h2>
+        <form action="https://formspree.io/f/xkgkgpnb" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <!-- CONTACT INFO + MAP -->
+      <div class="contact-info">
+        <h2>Our Info</h2>
+        <p>Email: chonglokphen@gmail.com</p>
+        <p>Phone: +60 14-975-0929</p>
+        <p>Address: Institut Pendidikan Guru Kampus Raja Melewar, Jalan Sikamat, Maktab Perguruan Raja Melewar, 70400 Seremban, Negeri Sembilan</p>
+        <div class="map-placeholder">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.2591463083536!2d101.95669927357346!3d2.739337355538019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdddc06c4730d1%3A0x195e4f5221a4067a!2sInstitut%20Pendidikan%20Guru%20Kampus%20Raja%20Melewar!5e0!3m2!1sen!2smy!4v1763041532611!5m2!1sen!2smy" 
+            width="100%" 
+            height="200" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="footer-bottom">© 2025 EcoVate | Innovating for sustainability.</p>
+  </footer>
+
+  <!-- DARK MODE SCRIPT -->
+  <script>
+    const toggle = document.getElementById('darkModeToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      toggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+    });
+  </script>
+</body>
+</html>

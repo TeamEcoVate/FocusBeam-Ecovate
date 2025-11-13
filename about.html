@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | EcoVate</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">EcoVate</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="features.html">Features</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button id="darkModeToggle">🌙</button>
+  </header>
+
+  <section class="hero about-hero">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h1>About EcoVate</h1>
+      <p>Innovating for a sustainable and focused future.</p>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <h2>Our Story</h2>
+    <p>
+      <b>EcoVate</b> was founded by a team of passionate students who wanted to merge environmental awareness with modern learning technology. From this vision, <b>FocusBeam</b> was born — a smart, sustainable study lamp that helps users stay focused while saving energy.
+    </p>
+  </section>
+
+  <!-- CORE VALUES SIMPLE -->
+  <section class="values-simple-section">
+    <h2>Our Core Values</h2>
+    <div class="values-logo">
+      <img src="companylogo.png" alt="EcoVate Logo">
+    </div>
+    <div class="values-container">
+      <div class="value-card">
+        <h3>Innovation</h3>
+        <p>Creative ideas and smart solutions that solve real-world problems.</p>
+      </div>
+      <div class="value-card">
+        <h3>Sustainability</h3>
+        <p>Designing eco-friendly products that reduce waste and environmental impact.</p>
+      </div>
+      <div class="value-card">
+        <h3>Collaboration</h3>
+        <p>Working together as a team to combine strengths and achieve better results.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TEAM -->
+  <section class="team-section">
+    <h2>Meet the Team</h2>
+    <div class="team-container">
+      <div class="team-member">
+        <img src="member1.jpg" alt="Team Member 1">
+        <h3>Member 1 Name</h3>
+        <p>Project Lead & Hardware Designer</p>
+      </div>
+      <div class="team-member">
+        <img src="member2.jpg" alt="Team Member 2">
+        <h3>Member 2 Name</h3>
+        <p>Software & Web Developer</p>
+      </div>
+      <div class="team-member">
+        <img src="member3.jpg" alt="Team Member 3">
+        <h3>Member 3 Name</h3>
+        <p>Research & Sustainability Analyst</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW WE WORK (E.C.O.V.E.) -->
+  <section class="how-section">
+    <h2>How We Work — <span style="color:#2e8b57;">E.C.O.V.E.</span></h2>
+    <div class="eco-steps">
+      <div><span class="initial">E</span> — Explore eco-friendly ideas that address real issues.</div>
+      <div><span class="initial">C</span> — Create prototypes using recycled and low-impact materials.</div>
+      <div><span class="initial">O</span> — Optimize performance, usability, and sustainability.</div>
+      <div><span class="initial">V</span> — Validate through testing, feedback, and improvement.</div>
+      <div><span class="initial">E</span> — Empower others to innovate responsibly.</div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-bottom">© 2025 EcoVate | Innovating for sustainability.</p>
+  </footer>
+
+  <script>
+    ScrollReveal().reveal('.hero-text',{delay:200,origin:'bottom',distance:'50px'});
+    ScrollReveal().reveal('.circle-container',{delay:300,origin:'bottom',distance:'50px'});
+    ScrollReveal().reveal('.team-section',{delay:400,origin:'bottom',distance:'50px'});
+    ScrollReveal().reveal('.eco-steps',{delay:500,origin:'bottom',distance:'50px'});
+    const toggle=document.getElementById('darkModeToggle');
+    toggle.addEventListener('click',()=>{
+      document.body.classList.toggle('dark');
+      toggle.textContent=document.body.classList.contains('dark')?'☀️':'🌙';
+    });
+  </script>
+</body>
+</html>
